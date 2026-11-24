@@ -48,3 +48,12 @@ Create the empty GitHub repository before running these commands. You will need 
 
 - GitHub Pages only hosts the frontend. FastAPI, Llama/Ollama, and other Python backends in the linked repositories **are not deployed** by this website. Code links point to GitHub; no live demo is implied.
 - All portfolio project descriptions were derived from the supplied resumes and the linked public GitHub profile/repositories. Review them before publishing.
+
+
+## Version 2 updates (November 2026)
+
+- Direct public contact links for email and phone (mailto: and tel:).
+- Interactive 1 → N / N → 1 system architecture explorer with keyboard-accessible controls.
+- Expanded six-category skills section: AI & multi-agent systems, ML/deep learning, backend, frontend, cloud, and data.
+- Enhanced hover and focus states, respects reduced-motion preferences.
+- Update GitHub Pages by uploading all six files into the repository root and committing to `main`.
