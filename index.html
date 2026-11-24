@@ -15,8 +15,8 @@
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="styles.css" rel="stylesheet"/>
-<script defer="" src="script.js"></script>
+<link href="styles.css?v=4" rel="stylesheet"/>
+<script defer="" src="script.js?v=4"></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -37,12 +37,13 @@
 <div class="hero-actions"><a class="btn btn-primary" href="#work">Explore my work <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="https://github.com/krishna-theja-nooka" rel="noopener noreferrer" target="_blank">GitHub profile <span aria-hidden="true">↗</span></a></div><div class="hero-direct-contact"><a href="mailto:nookareddy.6@gmail.com">✉  nookareddy.6@gmail.com</a><a href="tel:+14257853767">☎  425-785-3767</a></div>
 <div class="hero-social"><a href="https://www.linkedin.com/in/krishna-theja-nooka-874352209/" rel="noopener noreferrer" target="_blank">LINKEDIN ↗</a><a href="https://github.com/krishna-theja-nooka" rel="noopener noreferrer" target="_blank">GITHUB ↗</a><a href="mailto:nookareddy.6@gmail.com">EMAIL ↗</a></div>
 </div>
-<div aria-label="Illustration of connected AI components" class="hero-visual">
+<div aria-label="Original circular AI Engineering diagram. Hover or tap the nodes to explore tools." class="hero-visual" id="hero-ai-map">
 <div class="visual-grid"></div><div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="orbit orbit-3"></div>
-<div class="core-badge"><span class="core-spark">✳</span><strong>AI</strong><small>ENGINEERING</small></div>
-<div class="float-card fc-top"><span class="tiny-disc mint"></span> <span>AGENT SYSTEMS</span><b>↗</b></div>
-<div class="float-card fc-left"><span class="tiny-disc coral"></span> <span>RAG + EVAL</span><b>↗</b></div>
-<div class="float-card fc-right"><span class="tiny-disc yellow"></span> <span>ML + DATA</span><b>↗</b></div>
+<button type="button" class="core-badge hero-hotspot" data-hero="engineering" aria-label="AI Engineering: explore tools" aria-expanded="false"><span class="core-spark">✳</span><strong>AI</strong><small>ENGINEERING</small></button>
+<button type="button" class="float-card fc-top hero-hotspot" data-hero="agents" aria-expanded="false"><span class="tiny-disc mint"></span><span>AGENT SYSTEMS</span><b>↗</b></button>
+<button type="button" class="float-card fc-left hero-hotspot" data-hero="rag" aria-expanded="false"><span class="tiny-disc coral"></span><span>RAG + EVAL</span><b>↗</b></button>
+<button type="button" class="float-card fc-right hero-hotspot" data-hero="ml" aria-expanded="false"><span class="tiny-disc yellow"></span><span>ML + DATA</span><b>↗</b></button>
+<div class="hero-hover-panel" id="hero-hover-panel" aria-live="polite" aria-hidden="true"><strong id="hero-hover-title">Explore the toolkit</strong><div class="hero-hover-tools" id="hero-hover-tools"></div></div>
 <div class="visual-corner">BUILD / MEASURE / IMPROVE <span>001</span></div>
 </div>
 </section>

@@ -11,3 +11,19 @@ a:focus-visible,button:focus-visible,.system-hub:focus-visible{outline:3px solid
 @media(max-width:1080px){.stack-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.system-board{padding:35px;gap:42px}.system-detail{grid-template-columns:1fr auto}.detail-kicker{grid-column:1/-1}}
 @media(max-width:700px){.stack-grid{grid-template-columns:1fr}.systems-mode{flex-wrap:wrap}.mode-btn{flex:1;min-width:140px}.system-board{grid-template-columns:1fr;gap:35px;padding:28px 18px;min-height:auto}.system-hub{width:185px;grid-row:1;grid-column:1}.system-board .system-branches,.system-board[data-mode="converge"] .system-branches{grid-column:1;grid-row:2}.system-board[data-mode="converge"] .system-hub{grid-column:1;grid-row:1}.system-wires{display:none}.system-node:hover,.system-board[data-mode="converge"] .system-node:hover{transform:translateY(-3px)}.system-detail{grid-template-columns:1fr;padding:20px;gap:10px}.detail-kicker{grid-column:1}.contact-direct{flex-direction:column}.contact-direct a{flex-wrap:wrap}.hero-direct-contact{flex-direction:column;align-items:flex-start;gap:12px}.stack-card{min-height:0}}
 @media(prefers-reduced-motion:reduce){.wire,.hub-pulse{animation:none}}
+
+/* v4: preserve the original orbit illustration; add unobtrusive interactive tool chips */
+.hero-hotspot{font-family:inherit;color:inherit;cursor:pointer;transition:box-shadow .24s ease,border-color .24s ease,filter .24s ease;z-index:3}
+.core-badge.hero-hotspot{border:0;color:#16251a}
+.core-badge.hero-hotspot:hover,.core-badge.hero-hotspot:focus-visible{box-shadow:0 0 0 5px #bdea6528,0 0 95px #bdea6580;filter:brightness(1.08)}
+.float-card.hero-hotspot:hover,.float-card.hero-hotspot:focus-visible{border-color:#bdea65;box-shadow:0 0 0 2px #bdea6520,0 16px 36px #0008;background:#29392d}
+.hero-hotspot:focus-visible{outline:2px solid #dafa91;outline-offset:3px}
+.hero-hover-panel{position:absolute;z-index:5;left:15px;right:15px;bottom:49px;padding:13px 15px;border:1px solid #71986b;border-radius:9px;background:#101d1beF;box-shadow:0 16px 45px #000b;opacity:0;pointer-events:none;transform:translateY(7px);transition:opacity .18s,transform .18s;backdrop-filter:blur(10px)}
+.hero-hover-panel.is-visible{opacity:1;pointer-events:auto;transform:translateY(0)}
+.hero-hover-panel strong{display:block;font-size:12px;color:#c9f28d;margin-bottom:9px;letter-spacing:.04em}
+.hero-hover-tools{display:flex;flex-wrap:wrap;gap:7px}
+.hero-hover-tools .tool-chip{display:inline-block;padding:6px 9px;border:1px solid #526853;border-radius:5px;background:#1b2c24;color:#e4eedf;font-size:11px;font-weight:650;transition:transform .16s ease,border-color .16s ease,background .16s ease,color .16s ease}
+.hero-hover-tools .tool-chip:hover{transform:translateY(-3px) scale(1.04);border-color:#d4ff8e;background:#365539;color:#fff;box-shadow:0 5px 15px #bdea6520}
+.hero-visual:has(.hero-hover-panel.is-visible) .visual-corner{opacity:.18}
+@media(max-width:700px){.hero-hover-panel{left:10px;right:10px;bottom:35px;padding:10px}.hero-hover-tools{gap:5px}.hero-hover-tools .tool-chip{font-size:10px;padding:5px 7px}}
+@media(prefers-reduced-motion:reduce){.hero-hotspot,.hero-hover-panel,.tool-chip{transition:none!important}}

@@ -57,3 +57,7 @@ Create the empty GitHub repository before running these commands. You will need 
 - Expanded six-category skills section: AI & multi-agent systems, ML/deep learning, backend, frontend, cloud, and data.
 - Enhanced hover and focus states, respects reduced-motion preferences.
 - Update GitHub Pages by uploading all six files into the repository root and committing to `main`.
+
+
+## Version 4 — Original Circle + Tool Hover
+Preserves the original orbit diagram and three floating labels. Hover or keyboard-focus an existing label to reveal a compact list of tools; on touch devices, tap to reveal the list. Tool chips have individual hover effects. Uses versioned CSS and JS URLs to reduce stale-cache issues.
